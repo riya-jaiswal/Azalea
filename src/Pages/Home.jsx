@@ -39,7 +39,7 @@ const Home = () => {
         
         {/* Compact Text Card */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
-          <div className="bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto border border-white/30">
+          <div className="bg-white/25 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto border border-white/30">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530] mb-4 leading-tight">
               Where Harmony Meets Housing
             </h1>
