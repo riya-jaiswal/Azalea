@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Navbar />
       {/* Hero Section with Auto Carousel and Green Text */}
-<section className="relative">
+     <section className="relative">
   <Carousel
     autoPlay
     infiniteLoop
@@ -33,17 +33,23 @@ const Home = () => {
           alt={`Hero Slide ${idx + 1}`}
           className="object-cover w-full h-[90vh]"
         />
-        {/* Text Block with Green Text */}
+        
+        {/* Subtle dark overlay */}
+        <div className="absolute inset-0 bg-black/10"></div>
+        
+        {/* Compact Text Card */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#187530] mb-4">
-            Where Harmony Meets Housing
-          </h1>
-          <p className="text-[#187530] text-base md:text-lg max-w-xl mx-auto mb-6">
-            Creating well-managed communities and properties through trust, innovation, and expert real estate and housing solutions.
-          </p>
-          <button className="bg-[#c89d47] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#b68935] transition">
-            Explore More
-          </button>
+          <div className="bg-white/20 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto border border-white/30">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530] mb-4 leading-tight">
+              Where Harmony Meets Housing
+            </h1>
+            <p className="text-gray-800 text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-6 leading-relaxed">
+              Creating well-managed communities and properties through trust, innovation, and expert real estate solutions.
+            </p>
+            <button className="bg-[#187530] text-white px-6 py-2 md:px-8 md:py-3 rounded-lg font-medium hover:bg-[#145a26] transition-all duration-300 shadow-md hover:shadow-lg">
+              Explore More
+            </button>
+          </div>
         </div>
       </div>
     ))}
@@ -51,54 +57,55 @@ const Home = () => {
 </section>
 
 
+
       {/* About Us */}
       <section className="bg-[#f2e9df] px-6 py-20 text-center" id="about">
-  <div className="max-w-4xl mx-auto mb-12">
-    <h2 className="text-3xl font-bold text-[#187530]">About us</h2>
-    <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-    </p>
-  </div>
+        <div className="max-w-4xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold text-[#187530]">About us</h2>
+          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          </p>
+        </div>
 
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-    {/* Left Section with Content */}
-    <div className="space-y-6 text-left">
-      {/* Company */}
-      <div>
-        <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
-          <span className="text-[#187530] text-2xl shadow-lg">✔</span>
-          Our Company
-        </h3>
-        <p className="text-sm text-[#1a1a1a] mt-1">
-          Azalea Management Services LLP provides seamless property and community management—from post-sales support to cooperative and NRI care—built on trust, transparency, and tailored service.
-        </p>
-      </div>
-      {/* Mission */}
-      <div>
-        <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
-          <span className="text-[#187530] text-2xl shadow-lg">✔</span>
-          Our Mission
-        </h3>
-        <p className="text-sm text-[#1a1a1a] mt-1">
-          To deliver reliable, transparent, and efficient real estate and community services that empower clients and enhance property value and harmony.
-        </p>
-      </div>
-      {/* Vision */}
-      <div>
-        <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
-          <span className="text-[#187530] text-2xl shadow-lg">✔</span>
-          Our Vision
-        </h3>
-        <p className="text-sm text-[#1a1a1a] mt-1">
-          To redefine real estate care by setting new benchmarks in innovation, quality, and client satisfaction—one community at a time.
-        </p>
-      </div>
-    </div>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          {/* Left Section with Content */}
+          <div className="space-y-6 text-left">
+            {/* Company */}
+            <div>
+              <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
+                <span className="text-[#187530] text-2xl shadow-lg">✔</span>
+                Our Company
+              </h3>
+              <p className="text-sm text-[#1a1a1a] mt-1">
+                Azalea Management Services LLP provides seamless property and community management—from post-sales support to cooperative and NRI care—built on trust, transparency, and tailored service.
+              </p>
+            </div>
+            {/* Mission */}
+            <div>
+              <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
+                <span className="text-[#187530] text-2xl shadow-lg">✔</span>
+                Our Mission
+              </h3>
+              <p className="text-sm text-[#1a1a1a] mt-1">
+                To deliver reliable, transparent, and efficient real estate and community services that empower clients and enhance property value and harmony.
+              </p>
+            </div>
+            {/* Vision */}
+            <div>
+              <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
+                <span className="text-[#187530] text-2xl shadow-lg">✔</span>
+                Our Vision
+              </h3>
+              <p className="text-sm text-[#1a1a1a] mt-1">
+                To redefine real estate care by setting new benchmarks in innovation, quality, and client satisfaction—one community at a time.
+              </p>
+            </div>
+          </div>
 
-    {/* Right Box */}
-    <div className="rounded-2xl bg-green-900 h-72 md:h-full"></div>
-  </div>
-</section>
+          {/* Right Box */}
+          <div className="rounded-2xl bg-green-900 h-72 md:h-full"></div>
+        </div>
+      </section>
 
 
       {/* Services Section */}
@@ -111,13 +118,13 @@ const Home = () => {
         </div>
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
           {[{ img: service1, title: 'Single Ownership & Control', desc: 'A sole proprietorship is owned and managed by a single individual, allowing complete control over business ....' },
-            { img: service2, title: 'Minimal Compliance & Easy Setup', desc: 'Compared to other business structures, a proprietorship requires minimal paperwork, fewer legal formalities.....' },
-            { img: service3, title: 'No Separate Legal Entity', desc: 'A sole Proprietorship and its owner share no separate legal identity. This means the business and the ....' }].map((item, idx) => (
-              <div key={idx} className="bg-white p-4 rounded-2xl shadow-md">
-                <img src={item.img} alt={item.title} className="rounded-xl mb-4" />
-                <h3 className="font-bold text-green-900 text-md mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-700">{item.desc}</p>
-              </div>
+          { img: service2, title: 'Minimal Compliance & Easy Setup', desc: 'Compared to other business structures, a proprietorship requires minimal paperwork, fewer legal formalities.....' },
+          { img: service3, title: 'No Separate Legal Entity', desc: 'A sole Proprietorship and its owner share no separate legal identity. This means the business and the ....' }].map((item, idx) => (
+            <div key={idx} className="bg-white p-4 rounded-2xl shadow-md">
+              <img src={item.img} alt={item.title} className="rounded-xl mb-4" />
+              <h3 className="font-bold text-green-900 text-md mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-700">{item.desc}</p>
+            </div>
           ))}
         </div>
         <button className="mt-10 bg-green-900 text-white px-6 py-2 rounded">Button</button>
@@ -175,44 +182,44 @@ const Home = () => {
       </section>
       {/* Contact Section */}
       <section className="bg-[#f2e9df] text-green-900 px-6 py-20" id="contact">
-      <div className="max-w-4xl mx-auto text-center mb-10">
-      <h2 className="text-3xl font-bold">Contact US</h2>
-      <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      </p>
-      </div>
+        <div className="max-w-4xl mx-auto text-center mb-10">
+          <h2 className="text-3xl font-bold">Contact US</h2>
+          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          </p>
+        </div>
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-    {/* Left Form */}
-      <form className="flex flex-col space-y-4">
-      <input
-        type="text"
-        placeholder="Enter Your Name"
-        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
-      />
-      <input
-        type="text"
-        placeholder="Enter Your Number"
-        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
-      />
-      <input
-        type="email"
-        placeholder="Enter Your e-mail"
-        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
-      />
-      <textarea
-        rows="4"
-        placeholder="Enter Your Message"
-        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md resize-none focus:outline-none"
-      />
-    </form>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          {/* Left Form */}
+          <form className="flex flex-col space-y-4">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Enter Your Number"
+              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Enter Your e-mail"
+              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
+            />
+            <textarea
+              rows="4"
+              placeholder="Enter Your Message"
+              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md resize-none focus:outline-none"
+            />
+          </form>
 
-    {/* Right Box */}
-    <div className="bg-green-900 rounded-md w-full min-h-[260px]"></div>
-  </div>
-</section>
-<Footer />
+          {/* Right Box */}
+          <div className="bg-green-900 rounded-md w-full min-h-[260px]"></div>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };
