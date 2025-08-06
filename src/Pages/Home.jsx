@@ -18,9 +18,9 @@ const Home = () => {
       >
         <div className="absolute inset-0 bg-green-900 "></div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-[#F2E9DC]">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lorem ipsum dolor sit amet</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Where Harmony Meets Housing</h1>
           <p className="text-base md:text-lg max-w-xl mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Creating well-managed communities and properties through trust, innovation, and expert real estate and housing solutions.
           </p>
           <button className="bg-[#E9DCC9] text-black px-6 py-2 rounded-lg font-medium">Button</button>
         </div>
@@ -71,7 +71,7 @@ const Home = () => {
     </div>
 
     {/* Right Box */}
-    <div className="rounded-2xl bg-[#187530] h-72 md:h-full"></div>
+    <div className="rounded-2xl bg-green-900 h-72 md:h-full"></div>
   </div>
 </section>
 
