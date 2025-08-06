@@ -57,19 +57,22 @@ const CertificatesSection = () => {
     }
   ];
 
-  return (
- <section className="bg-[#F2E9DC] px-6 py-20 text-center">
+  return (<>
+  
+  
+ {/* <section className="bg-[#F2E9DC] px-6 py-20 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900 mb-4">Our Certificates</h2>
         <p className="text-gray-700 mb-10 max-w-xl mx-auto">
           Elevating and Empowering Your Certification Success with Tailored, Innovative, and Strategic Solutions Designed for Excellence
-          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. */}
+         
         </p>
-        <div className="flex justify-center items-end gap-6">
+        <div className="grid grid-cols-1 justify-center  items-center lg:grid-cols-5 lg:justify-end lg:items-end gap-6">
           {[1, 2, 3, 4, 5].map((_, idx) => (
             <img key={idx} src={Image} className={` rounded-2xl w-48 ${idx === 2 ? 'h-72' : 'h-60'}`}/>
           ))}
         </div>
-      </section>
+      </section> */}
+  </>
   );
 };
 
