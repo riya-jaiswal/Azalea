@@ -2,12 +2,12 @@ import React from 'react';
 import Navbar from '../Section/Navbar';
 import Footer from '../Section/Footer';
 import { Carousel } from 'react-responsive-carousel';
-import hero1 from '../assets/Hero section/WhatsApp Image 2025-08-06 at 4.59.14 PM.jpeg';
-import hero2 from '../assets/Hero section/WhatsApp Image 2025-08-06 at 4.59.13 PM.jpeg';
-import hero3 from '../assets/Hero section/WhatsApp Image 2025-08-06 at 4.59.12 PM.jpeg';
-import service1 from '../assets/logo/Azalea Logo (4).jpg';
-import service2 from '../assets/logo/Azalea Logo (4).jpg';
-import service3 from '../assets/logo/Azalea Logo (4).jpg';
+import hero1 from '../assets/Hero section/image 1.jpeg';
+import hero2 from '../assets/Hero section/image 5.jpeg';
+import hero3 from '../assets/Hero section/image 6.jpeg';
+import service1 from '../assets/Service/Image 1.jpeg';
+import service2 from '../assets/Service/image 2.jpeg';
+import service3 from '../assets/Hero section/image 1.jpeg';
 
 const Home = () => {
   return (
