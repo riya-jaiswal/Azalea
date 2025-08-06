@@ -13,10 +13,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      {/*Hero Section*/}
-     <section className="relative">
-     <Carousel
-      autoPlay
+      {/* Hero Section with Auto Carousel and Green Text */}
+<section className="relative">
+  <Carousel
+    autoPlay
     infiniteLoop
     showThumbs={false}
     showStatus={false}
@@ -33,12 +33,12 @@ const Home = () => {
           alt={`Hero Slide ${idx + 1}`}
           className="object-cover w-full h-[90vh]"
         />
-        {/* Text Block (no background overlay) */}
+        {/* Text Block with Green Text */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#187530] mb-4">
             Where Harmony Meets Housing
           </h1>
-          <p className="text-white text-base md:text-lg max-w-xl mx-auto mb-6 drop-shadow">
+          <p className="text-[#187530] text-base md:text-lg max-w-xl mx-auto mb-6">
             Creating well-managed communities and properties through trust, innovation, and expert real estate and housing solutions.
           </p>
           <button className="bg-[#c89d47] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#b68935] transition">
