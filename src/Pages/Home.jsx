@@ -13,10 +13,10 @@ const Home = () => {
 
       {/* Hero Section */}
       <section
-        className="relative h-[90vh] bg-cover bg-center rounded-b-[60px] flex items-center"
+        className="relative h-[90vh] bg-cover bg-center  flex items-center"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-green-900/80 rounded-b-[60px]"></div>
+        <div className="absolute inset-0 bg-green-900 "></div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-[#F2E9DC]">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Lorem ipsum dolor sit amet</h1>
           <p className="text-base md:text-lg max-w-xl mb-6">
@@ -27,37 +27,54 @@ const Home = () => {
       </section>
 
       {/* About Us */}
-      <section className="bg-[#F2E9DC] px-6 py-20 text-center" id="about">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-green-900 mb-2">About us</h2>
-          <p className="text-gray-700 mb-12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          </p>
-        </div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-start">
-          <div className="space-y-6 text-left">
-            <div>
-              <h3 className="text-lg font-bold text-green-900 flex items-center gap-2">
-                ✅ Our Company
-              </h3>
-              <p className="text-sm">Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold text-green-900 flex items-center gap-2">
-                ✅ Our Mission
-              </h3>
-              <p className="text-sm">Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-bold text-green-900 flex items-center gap-2">
-                ✅ Our Vision
-              </h3>
-              <p className="text-sm">Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis.</p>
-            </div>
-          </div>
-          <div className="rounded-2xl bg-green-900 h-64 md:h-full"></div>
-        </div>
-      </section>
+      <section className="bg-[#f2e9df] px-6 py-20 text-center" id="about">
+  <div className="max-w-4xl mx-auto mb-12">
+    <h2 className="text-3xl font-bold text-[#187530]">About us</h2>
+    <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+  </div>
+
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+    {/* Left Section with Content */}
+    <div className="space-y-6 text-left">
+      {/* Company */}
+      <div>
+        <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
+          <span className="text-[#187530] text-2xl shadow-lg">✔</span>
+          Our Company
+        </h3>
+        <p className="text-sm text-[#1a1a1a] mt-1">
+          Azalea Management Services LLP provides seamless property and community management—from post-sales support to cooperative and NRI care—built on trust, transparency, and tailored service.
+        </p>
+      </div>
+      {/* Mission */}
+      <div>
+        <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
+          <span className="text-[#187530] text-2xl shadow-lg">✔</span>
+          Our Mission
+        </h3>
+        <p className="text-sm text-[#1a1a1a] mt-1">
+          To deliver reliable, transparent, and efficient real estate and community services that empower clients and enhance property value and harmony.
+        </p>
+      </div>
+      {/* Vision */}
+      <div>
+        <h3 className="text-lg font-bold text-[#187530] flex items-start gap-2">
+          <span className="text-[#187530] text-2xl shadow-lg">✔</span>
+          Our Vision
+        </h3>
+        <p className="text-sm text-[#1a1a1a] mt-1">
+          To redefine real estate care by setting new benchmarks in innovation, quality, and client satisfaction—one community at a time.
+        </p>
+      </div>
+    </div>
+
+    {/* Right Box */}
+    <div className="rounded-2xl bg-[#187530] h-72 md:h-full"></div>
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section className="bg-[#F2E9DC] px-6 py-20 text-center" id="services">
@@ -132,41 +149,45 @@ const Home = () => {
         </div>
       </section>
       {/* Contact Section */}
-      <section className="bg-white text-green-900 px-6 py-20" id="contact">
-  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-    {/* Left Info */}
-    <div className="space-y-4">
-      <h2 className="text-3xl font-bold mb-2">Contact Us</h2>
-      <p className="text-sm text-gray-700">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <section className="bg-[#f2e9df] text-green-900 px-6 py-20" id="contact">
+      <div className="max-w-4xl mx-auto text-center mb-10">
+      <h2 className="text-3xl font-bold">Contact US</h2>
+      <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       </p>
-      <div className="mt-4">
-        <p className="font-semibold">📍 Address:</p>
-        <p className="text-sm text-gray-700">123 Azalea Street, Mumbai, Maharashtra</p>
       </div>
-      <div className="mt-2">
-        <p className="font-semibold">📞 Phone:</p>
-        <p className="text-sm text-gray-700">+91 9876543210</p>
-      </div>
-      <div className="mt-2">
-        <p className="font-semibold">✉️ Email:</p>
-        <p className="text-sm text-gray-700">info@azalea.com</p>
-      </div>
-    </div>
 
-    {/* Right Form */}
-    <form className="space-y-4 text-left">
-      <input type="text" placeholder="Enter Your Name" className="w-full p-3 border border-gray-300 rounded text-black" />
-      <input type="email" placeholder="Enter Your Email" className="w-full p-3 border border-gray-300 rounded text-black" />
-      <input type="text" placeholder="Enter Your Number" className="w-full p-3 border border-gray-300 rounded text-black" />
-      <textarea placeholder="Enter Your Message" className="w-full p-3 border border-gray-300 rounded text-black"></textarea>
-      <button className="bg-green-900 text-white px-6 py-2 rounded font-semibold">Submit</button>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+    {/* Left Form */}
+      <form className="flex flex-col space-y-4">
+      <input
+        type="text"
+        placeholder="Enter Your Name"
+        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
+      />
+      <input
+        type="text"
+        placeholder="Enter Your Number"
+        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
+      />
+      <input
+        type="email"
+        placeholder="Enter Your e-mail"
+        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
+      />
+      <textarea
+        rows="4"
+        placeholder="Enter Your Message"
+        className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md resize-none focus:outline-none"
+      />
     </form>
+
+    {/* Right Box */}
+    <div className="bg-green-900 rounded-md w-full min-h-[260px]"></div>
   </div>
 </section>
-
-
-      <Footer />
+<Footer />
     </>
   );
 };
