@@ -1,7 +1,10 @@
 import React from 'react';
 import Navbar from '../Section/Navbar';
 import Footer from '../Section/Footer';
-import heroImage from '../assets/logo/Azalea Logo (4).jpg';
+import { Carousel } from 'react-responsive-carousel';
+import hero1 from '../assets/Hero section/WhatsApp Image 2025-08-06 at 4.59.14 PM.jpeg';
+import hero2 from '../assets/Hero section/WhatsApp Image 2025-08-06 at 4.59.13 PM.jpeg';
+import hero3 from '../assets/Hero section/WhatsApp Image 2025-08-06 at 4.59.12 PM.jpeg';
 import service1 from '../assets/logo/Azalea Logo (4).jpg';
 import service2 from '../assets/logo/Azalea Logo (4).jpg';
 import service3 from '../assets/logo/Azalea Logo (4).jpg';
@@ -10,21 +13,43 @@ const Home = () => {
   return (
     <>
       <Navbar />
-
-      {/* Hero Section */}
-      <section
-        className="relative h-[90vh] bg-cover bg-center  flex items-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-green-900 "></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-[#F2E9DC]">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Where Harmony Meets Housing</h1>
-          <p className="text-base md:text-lg max-w-xl mb-6">
+      {/*Hero Section*/}
+     <section className="relative">
+     <Carousel
+      autoPlay
+    infiniteLoop
+    showThumbs={false}
+    showStatus={false}
+    interval={4000}
+    showArrows={false}
+    stopOnHover={false}
+    swipeable={true}
+    emulateTouch={true}
+  >
+    {[hero1, hero2, hero3].map((img, idx) => (
+      <div key={idx} className="relative h-[90vh] w-full">
+        <img
+          src={img}
+          alt={`Hero Slide ${idx + 1}`}
+          className="object-cover w-full h-[90vh]"
+        />
+        {/* Text Block (no background overlay) */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            Where Harmony Meets Housing
+          </h1>
+          <p className="text-white text-base md:text-lg max-w-xl mx-auto mb-6 drop-shadow">
             Creating well-managed communities and properties through trust, innovation, and expert real estate and housing solutions.
           </p>
-          <button className="bg-[#E9DCC9] text-black px-6 py-2 rounded-lg font-medium">Button</button>
+          <button className="bg-[#c89d47] text-white px-6 py-2 rounded-lg font-medium hover:bg-[#b68935] transition">
+            Explore More
+          </button>
         </div>
-      </section>
+      </div>
+    ))}
+  </Carousel>
+</section>
+
 
       {/* About Us */}
       <section className="bg-[#f2e9df] px-6 py-20 text-center" id="about">
