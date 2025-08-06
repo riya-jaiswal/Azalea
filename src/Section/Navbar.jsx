@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md lg:rounded-b-[60px] z-50 sticky top-0">
+    <nav className="bg-white shadow-md lg:rounded-b-[60px] z-50 fixed w-full top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Desktop Navigation */}
@@ -50,8 +50,8 @@ const Navbar = () => {
 
           {/* Right Button */}
           <div>
-            <button className="bg-green-900 text-white px-6 py-2 rounded-xl hover:bg-green-800 transition">
-              Button
+            <button className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full">
+              Get In Touch
             </button>
           </div>
         </div>

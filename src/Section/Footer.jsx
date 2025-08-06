@@ -3,7 +3,7 @@ import logo from '../assets/logo/Azalea Logo (4).png';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F2E9DC] text-gray-800 px-6 py-10 mt-10">
+    <footer className="bg-[#F2E9DC] text-gray-800 px-6 py-10 pt-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
         {/* Left Side - Address, Contact, Logo, Social */}
