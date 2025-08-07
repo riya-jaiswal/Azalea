@@ -44,7 +44,7 @@ const Home = () => {
           {[{ img: service1, title: 'Post-Sales Management', desc: 'Seamless handover, documentation, buyer coordination, and compliance support post project sales.' },
           { img: service2, title: 'One-Year Project Support', desc: 'Initial facility setup, utilities, staffing, and community-building for newly launched properties.' },
           { img: service3, title: 'NRI Property Management', desc: 'Remote monitoring, rent collection, tenant handling, and full legal-compliance for overseas investors.' }].map((item, idx) => (
-            <div key={idx} className="bg-white p-4 rounded-2xl shadow-md">
+            <div key={idx} className="bg-white p-4 rounded-2xl shadow-md duration-300 transition-all hover:scale-105 cursor-pointer">
               <img src={item.img} alt={item.title} className="rounded-xl mb-4 " />
               <h3 className="font-bold text-xl text-green-900 text-md mb-2">{item.title}</h3>
               <p className="text-sm text-gray-700">{item.desc}</p>
