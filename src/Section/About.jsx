@@ -1,4 +1,4 @@
-import AboutImage from "../assets/About/Image1.jpg";
+import AboutImage from "../assets/About/Image2.jpg";
 import Hero from "./Hero";
 
 const AboutSection = () => {
