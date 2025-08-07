@@ -54,7 +54,7 @@ const Navbar = () => {
 
           {/* Right Button */}
           <div>
-            <button onClick={NavigatedToService} className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full">
+            <button onClick={NavigatedToService} className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer  hover:bg-[#c89d47]  transition-all duration-300 font-semibold rounded-full">
               Get In Touch
             </button>
           </div>

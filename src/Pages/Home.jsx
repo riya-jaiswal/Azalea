@@ -50,7 +50,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <button onClick={NavigeToService} className="bg-green-900 mt-10 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full">Load More</button>
+        <button onClick={NavigeToService} className="bg-green-900 mt-10 text-white  p-2.5 px-8 text-base cursor-pointer  transition-all duration-300 font-semibold rounded-full  hover:bg-[#c89d47] ">Load More</button>
       </section>
 
 

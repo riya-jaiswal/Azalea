@@ -49,7 +49,7 @@ function Hero(props) {
                   {props?.isHomepage && (
                     <button
                       onClick={NavigateToService}
-                      className="bg-[#187530] text-white px-6 py-2 md:px-8 md:py-3 rounded-lg font-medium hover:bg-[#145a26] transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="bg-[#187530] text-white px-6 py-2 md:px-8 md:py-3 rounded-full font-medium  cursor-pointer  hover:bg-[#c89d47]  transition-all duration-300 shadow-md hover:shadow-lg"
                     >
                       Explore More
                     </button>
