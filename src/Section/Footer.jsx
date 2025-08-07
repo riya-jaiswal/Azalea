@@ -48,28 +48,26 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <FaMapMarkerAlt className="text-green-900 mt-1 flex-shrink-0" size={14} />
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    123, Business Street,<br />
-                    Mumbai, Maharashtra<br />
-                    India - 400001
-                  </p>
+                  <a  className="text-sm hover:underline hover:text-green-900 cursor-pointer text-gray-700 leading-relaxed">
+                  Azalea Management Services LLP 12/28-B, Rajdeep Vrindavan CHSL Vrindavan Society Phase I Thane, Maharashtra 400601 India
+                  </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <FaPhone className="text-green-900 flex-shrink-0" size={14} />
                   <a 
-                    href="tel:+919876543210" 
-                    className="text-sm text-gray-700 hover:text-green-900 transition-colors duration-200"
+                    href="tel:+917738975751" 
+                    className="text-sm text-gray-700 hover:underline hover:text-green-900 transition-colors duration-200"
                   >
-                    +91-9876543210
+                   +91 77389 757 51
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <FaEnvelope className="text-green-900 flex-shrink-0" size={14} />
                   <a 
-                    href="mailto:info@azalea.com" 
-                    className="text-sm text-gray-700 hover:text-green-900 transition-colors duration-200"
+                    href="mailto:azaleamanagementservices@gmail.com" 
+                    className="text-sm hover:underline text-gray-700 hover:text-green-900 transition-colors duration-200"
                   >
-                    info@azalea.com
+                    azaleamanagementservices@gmail.com
                   </a>
                 </div>
               </div>
