@@ -24,7 +24,7 @@ const Contactsection = (props) => {
       });
 
       // Axios API call
-      const response = await axios.post('/api/contact', {
+      const response = await axios.post('/api/contactApi.js', {
         name: data.name,
         email: data.email,
         number: data.number,
