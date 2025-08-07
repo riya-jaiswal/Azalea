@@ -64,8 +64,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto text-center pb-10 ">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Contact US</h2>
           <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            Connect with Azalea Management Services for expert support in post-sales, NRI property care, and cooperative housing management. We're here to deliver transparent, tailored solutions for your property needs.
           </p>
         </div>
 
