@@ -1,9 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import hero1 from '../assets/Hero section/image 1.jpeg';
 import hero2 from '../assets/Hero section/image 5.jpeg';
 import hero3 from '../assets/Hero section/image 6.jpeg';
 function Hero(props) {
+  const nav=useNavigate()
+  const NavigateToService=()=>{
+    nav("/services")
+  }
   return (<>
 
       {/* Hero Section with Auto Carousel and Green Text */}
@@ -40,7 +45,7 @@ function Hero(props) {
                   <p className="text-gray-800 text-sm md:text-base lg:text-lg max-w-xl mx-auto mb-6 leading-relaxed">
                   {props.paragraph}
                   </p>
-                  <button className="bg-[#187530] text-white px-6 py-2 md:px-8 md:py-3 rounded-lg font-medium hover:bg-[#145a26] transition-all duration-300 shadow-md hover:shadow-lg">
+                  <button onClick={NavigateToService} className="bg-[#187530] text-white px-6 py-2 md:px-8 md:py-3 rounded-lg font-medium hover:bg-[#145a26] transition-all duration-300 shadow-md hover:shadow-lg">
                     Explore More
                   </button>
                 </div>
