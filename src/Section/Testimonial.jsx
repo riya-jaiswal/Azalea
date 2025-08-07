@@ -73,7 +73,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-green-900 to-green-800 px-6 py-20 text-center text-white relative overflow-hidden">
+    <section className="bg-gradient-to-br from-green-900 to-green-800 px-6 py-10 md:py-20 text-center text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full"></div>

@@ -13,7 +13,7 @@ function About() {
       {/* More Info */}
    {/* Why Choose Us */}
       <section className="bg-white px-6 py-20 text-center">
-        <h3 className="text-4xl font-bold text-[#187530] mb-12">
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900 mb-12">
           Why Choose Us
         </h3>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-left">
@@ -46,7 +46,7 @@ function About() {
 
       {/* HOW WE WORK */}
       <section className="bg-[#f9f4ef] px-6 py-20 text-center">
-        <h3 className="text-4xl font-bold text-[#187530] mb-16">How We Work</h3>
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900  mb-16">How We Work</h3>
 
         <div className="relative max-w-6xl mx-auto">
           {/* Horizontal dashed line (desktop only) */}
@@ -93,7 +93,7 @@ function About() {
 
       {/* Our Team */}
       <section className="bg-white px-6 py-20 text-center">
-        <h3 className="text-4xl font-bold text-[#187530] mb-12">Our Team</h3>
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900  mb-12">Our Team</h3>
         <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {[
             {

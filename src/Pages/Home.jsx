@@ -12,6 +12,8 @@ import FAQSection from '../Section/FaqSection';
 import CertificatesSection from '../Section/OurCertificate';
 import Hero from '../Section/Hero';
 import { useNavigate } from 'react-router-dom';
+import Contact from './Contact';
+import Contactsection from '../Section/Contactsection';
 const Home = () => {
   const nav = useNavigate()
   const NavigeToService = () => {
@@ -30,7 +32,7 @@ const Home = () => {
       <AboutSection />
 
       {/* Services Section */}
-      <section className="bg-[#F2E9DC] px-6 py-20 text-center" id="services">
+      <section className="bg-[#F2E9DC] px-6 py-10 md:py-20 text-center" id="services">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900 mb-2">Our Services</h2>
           <p className="text-gray-700 mb-12">
@@ -60,44 +62,7 @@ const Home = () => {
       {/* FAQ Section */}
       <FAQSection />
       {/* Contact Section */}
-      <section className="bg-[#f2e9df] text-green-900 px-6 py-20" id="contact">
-        <div className="max-w-4xl mx-auto text-center pb-10 ">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Contact US</h2>
-          <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-            Connect with Azalea Management Services for expert support in post-sales, NRI property care, and cooperative housing management. We're here to deliver transparent, tailored solutions for your property needs.
-          </p>
-        </div>
-
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
-          {/* Left Form */}
-          <form className="flex flex-col space-y-4">
-            <input
-              type="text"
-              placeholder="Enter Your Name"
-              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Enter Your Number"
-              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Enter Your e-mail"
-              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md focus:outline-none"
-            />
-            <textarea
-              rows="4"
-              placeholder="Enter Your Message"
-              className="bg-green-900 text-white placeholder-white px-4 py-3 rounded-md resize-none focus:outline-none"
-            />
-            <div><button className='bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full'>Submit</button></div>
-          </form>
-
-          {/* Right Box */}
-          <div className=" rounded-md "><img src={ContactImage} className='h-90 w-full rounded-lg' /></div>
-        </div>
-      </section>
+     <Contactsection shouldMapShow={false}/>
       <Footer />
     </>
   );

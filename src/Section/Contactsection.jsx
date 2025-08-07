@@ -1,18 +1,18 @@
-import ContactImage from '../assets/Contact/Image1.jpg'; 
+import ContactImage from '../assets/Hero/BackGroundImage5.jpeg'; 
 
-const Contactsection = () => {
+const Contactsection = (props) => {
   return (
-    <section className="bg-[#f2e9df] text-green-900 px-6 py-20" id="contact">
+    <section className="bg-[#f2e9df] text-green-900 px-6 py-10 md:py-20" id="contact">
       <div className="max-w-4xl mx-auto text-center pb-10">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Contact Us</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530]">Contact Us</h2>
         <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
           Reach out to us for inquiries, partnerships, or service requests. Our team is ready to assist you with personalized support and guidance.
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <div className="max-w-7xl mx-auto grid  md:grid-cols-2 gap-10 items-start">
         {/* Left Form */}
-        <form className="flex flex-col space-y-4">
+        <form className="flex flex-col order-2 md:order-1 space-y-4 md:px-16">
           <input
             type="text"
             placeholder="Enter Your Name"
@@ -44,17 +44,17 @@ const Contactsection = () => {
         </form>
 
         {/* Right Image */}
-        <div className="rounded-md">
+        <div className="rounded-xl ">
           <img
             src={ContactImage}
             alt="Contact Illustration"
-            className="h-90 w-full rounded-lg object-cover"
+            className="h-90 w-full rounded-lg object-cover hover:scale-105 transition-all duration-300"
           />
         </div>
       </div>
 
       {/* Google Map */}
-      <div className="max-w-7xl mx-auto mt-16">
+    { props?.shouldMapShow&& <div className="max-w-7xl mx-auto mt-16">
         <h3 className="text-2xl font-bold mb-6 text-center">Our Location</h3>
         <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-md">
           <iframe
@@ -68,7 +68,7 @@ const Contactsection = () => {
             className="border-0 w-full h-full"
           ></iframe>
         </div>
-      </div>
+      </div>}
     </section>
   );
 };

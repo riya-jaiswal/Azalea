@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import logo from '../assets/logo/Azalea Logo (4).png';
@@ -21,6 +21,10 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+  const nav=useNavigate()
+  const NavigatedToService=()=>[
+    nav("/contact")
+  ]
 
   return (
     <nav className="bg-white shadow-md lg:rounded-b-[60px] z-50 fixed w-full top-0">
@@ -50,7 +54,7 @@ const Navbar = () => {
 
           {/* Right Button */}
           <div>
-            <button className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full">
+            <button onClick={NavigatedToService} className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full">
               Get In Touch
             </button>
           </div>
@@ -64,7 +68,7 @@ const Navbar = () => {
 
             {/* Mobile Logo */}
             <div className="flex items-center">
-              <img src={logo} alt="Azalea Logo" className="h-10" />
+              <img src={logo} alt="Azalea Logo" className="h-12" />
             </div>
 
             {/* Mobile Menu Button */}
@@ -93,7 +97,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Header */}
             <div className="flex items-center justify-between p-4 border-b">
-              <img src={logo} alt="Azalea Logo" className="h-8" />
+              <img src={logo} alt="Azalea Logo" className="h-12" />
               <button
                 onClick={closeMenu}
                 className="text-gray-700 hover:text-green-700 transition p-2"
@@ -121,10 +125,14 @@ const Navbar = () => {
 
               {/* Mobile Button */}
               <button
-                className="bg-green-900 text-white px-6 py-3 rounded-xl hover:bg-green-800 transition mt-4"
-                onClick={closeMenu}
+              
+                className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer hover:bg-green-800 font-semibold rounded-full"
+                onClick={()=>{
+                  NavigatedToService()
+                  closeMenu()
+                }}
               >
-                Button
+                Get In Touch
               </button>
             </div>
           </div>

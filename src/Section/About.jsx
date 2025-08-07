@@ -7,9 +7,9 @@ const AboutSection = () => {
       {/* Hero */}
 
       {/* About Company */}
-      <section className="bg-[#f2e9df] px-6 py-20 text-center" id="about">
+      <section className="bg-[#f2e9df] px-6 py-10 md:py-20 text-center" id="about">
         <div className="max-w-4xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530] mb-4 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530] mb-4">
             About Us
           </h2>
           <p className="text-gray-700 mt-4 leading-relaxed">

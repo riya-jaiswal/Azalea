@@ -10,7 +10,7 @@ function Contact() {
     <div>
       <Navbar />
       <Hero isHomepage={false} heading="Where Harmony Meets Housing" paragraph="  Creating well-managed communities and properties through trust, innovation, and expert real estate solutions." />
-      <Contactsection />
+      <Contactsection shouldMapShow={true} />
       <Footer />
     </div>
   )
