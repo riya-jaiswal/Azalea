@@ -5,15 +5,12 @@ const AboutSection = () => {
   return (
     <>
       {/* Hero */}
-      <Hero
-        heading="About Azalea Management Services"
-        paragraph="Delivering trusted, end-to-end real estate and community management solutions for developers, NRIs, and housing societies."
-      />
+    
 
       {/* About Company */}
       <section className="bg-[#f2e9df] px-6 py-20 text-center" id="about">
         <div className="max-w-4xl mx-auto mb-12">
-          <h2 className="text-4xl font-bold text-[#187530]">About Us</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530] mb-4 leading-tight">About Us</h2>
           <p className="text-gray-700 mt-4 leading-relaxed">
             Azalea Management Services LLP offers complete real estate and community
             living solutions—from post-sales property management to NRI care and
