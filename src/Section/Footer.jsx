@@ -12,7 +12,7 @@ const Footer = () => {
             
             {/* Company Info */}
             <div>
-              <img src={logo} alt="Azalea Logo" className="h-12 mb-4" />
+              <img src={logo} alt="Azalea Logo" className="h-18 mb-4" />
               <p className="text-gray-700 text-sm leading-relaxed mb-6">
                 Azalea Management Services LLP provides comprehensive business solutions 
                 with expertise and dedication to help your business grow.

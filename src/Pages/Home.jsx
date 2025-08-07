@@ -39,10 +39,11 @@ const Home = () => {
             Elevating and Empowering Your Business with Customized, Innovative, and Strategic Solutions Designed for Success
           </p>
         </div>
+         
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
-          {[{ img: service1, title: 'Single Ownership & Control', desc: 'A sole proprietorship is owned and managed by a single individual, allowing complete control over business ....' },
-          { img: service2, title: 'Minimal Compliance & Easy Setup', desc: 'Compared to other business structures, a proprietorship requires minimal paperwork, fewer legal formalities.....' },
-          { img: service3, title: 'No Separate Legal Entity', desc: 'A sole Proprietorship and its owner share no separate legal identity. This means the business and the ....' }].map((item, idx) => (
+          {[{ img: service1, title: 'Post-Sales Management', desc: 'Seamless handover, documentation, buyer coordination, and compliance support post project sales.' },
+          { img: service2, title: 'One-Year Project Support', desc: 'Initial facility setup, utilities, staffing, and community-building for newly launched properties.' },
+          { img: service3, title: 'NRI Property Management', desc: 'Remote monitoring, rent collection, tenant handling, and full legal-compliance for overseas investors.' }].map((item, idx) => (
             <div key={idx} className="bg-white p-4 rounded-2xl shadow-md">
               <img src={item.img} alt={item.title} className="rounded-xl mb-4 " />
               <h3 className="font-bold text-xl text-green-900 text-md mb-2">{item.title}</h3>
