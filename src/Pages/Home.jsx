@@ -24,7 +24,7 @@ const Home = () => {
 
 
       {/* hero */}
-      <Hero heading="Where Harmony Meets Housing" paragraph="  Creating well-managed communities and properties through trust, innovation, and expert real estate solutions." />
+      <Hero isHomepage={true} heading="Where Harmony Meets Housing" paragraph="  Creating well-managed communities and properties through trust, innovation, and expert real estate solutions." />
 
       {/* About Us */}
       <AboutSection />

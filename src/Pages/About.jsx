@@ -8,7 +8,7 @@ function About() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero  isHomepage={false} heading="Where Harmony Meets Housing" paragraph="  Creating well-managed communities and properties through trust, innovation, and expert real estate solutions." />
       <Aboutsection />
       {/* More Info */}
    {/* Why Choose Us */}
