@@ -44,7 +44,7 @@ const Contactsection = (props) => {
         </form>
 
         {/* Right Image */}
-        <div className="rounded-xl ">
+        <div className="rounded-xl order-1 md:order-2 ">
           <img
             src={ContactImage}
             alt="Contact Illustration"
