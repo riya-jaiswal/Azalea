@@ -1,9 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
-import hero1 from '../assets/Hero section/image 1.jpeg';
-import hero2 from '../assets/Hero section/image 5.jpeg';
-import hero3 from '../assets/Hero section/image 6.jpeg';
+import hero1 from '../assets/Hero/BackGroundImage1.jpg';
+import hero2 from '../assets/Hero/BackGroundImage2.jpg';
+import hero3 from '../assets/Hero/BackGroundImage4.jpg';
 function Hero(props) {
   const nav = useNavigate()
   const NavigateToService = () => {
