@@ -1,17 +1,22 @@
-import React, { memo } from 'react'
-import Navbar from '../Section/Navbar'
-import Footer from '../Section/Footer'
-import Aboutsection from '../Section/About'
-import Hero from '../Section/Hero';
-
+import React, { memo } from "react";
+import Navbar from "../Section/Navbar";
+import Footer from "../Section/Footer";
+import Aboutsection from "../Section/About";
+import Hero from "../Section/Hero";
+import Image1 from "../assets/Team/Member1.jpeg";
+import Image2 from "../assets/Team/Member2.jpeg";
 function About() {
   return (
     <div>
       <Navbar />
-      <Hero  isHomepage={false} heading="Where Harmony Meets Housing" paragraph="  Creating well-managed communities and properties through trust, innovation, and expert real estate solutions." />
+      <Hero
+        isHomepage={false}
+        heading="Where Harmony Meets Housing"
+        paragraph="  Creating well-managed communities and properties through trust, innovation, and expert real estate solutions."
+      />
       <Aboutsection />
       {/* More Info */}
-   {/* Why Choose Us */}
+      {/* Why Choose Us */}
       <section className="bg-white px-6 py-20 text-center">
         <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900 mb-12">
           Why Choose Us
@@ -46,7 +51,9 @@ function About() {
 
       {/* HOW WE WORK */}
       <section className="bg-[#f9f4ef] px-6 py-20 text-center">
-        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900  mb-16">How We Work</h3>
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900  mb-16">
+          How We Work
+        </h3>
 
         <div className="relative max-w-6xl mx-auto">
           {/* Horizontal dashed line (desktop only) */}
@@ -93,23 +100,20 @@ function About() {
 
       {/* Our Team */}
       <section className="bg-white px-6 py-20 text-center">
-        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900  mb-12">Our Team</h3>
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-green-900  mb-12">
+          Our Team
+        </h3>
+        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {[
             {
-              name: "Ravi Kumar",
-              role: "Head of Operations",
-              image: "https://via.placeholder.com/150",
+              name: "Sanket Shailendra Kalke",
+              role: "Director",
+              image: Image1,
             },
             {
-              name: "Neha Sharma",
-              role: "Legal & Compliance Lead",
-              image: "https://via.placeholder.com/150",
-            },
-            {
-              name: "Ajay Verma",
-              role: "Community Engagement Manager",
-              image: "https://via.placeholder.com/150",
+              name: " Savita Shailendra Kalke",
+              role: "Director",
+              image: Image2,
             },
           ].map((member, i) => (
             <div
@@ -118,7 +122,7 @@ function About() {
             >
               <img
                 src={member.image}
-                loading='lazy'
+                loading="lazy"
                 alt={member.name}
                 className="w-24 h-24 mx-auto rounded-full mb-4"
               />
@@ -131,10 +135,9 @@ function About() {
         </div>
       </section>
 
-
       <Footer />
     </div>
-  )
+  );
 }
 
-export default memo(About)
+export default memo(About);

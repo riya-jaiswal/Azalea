@@ -5,6 +5,7 @@ import {
   FaMapMarkerAlt,
   FaPhone,
   FaEnvelope,
+  FaFacebook,
 } from "react-icons/fa";
 import logo from "../assets/logo/Azalea Logo (4).png";
 import { Link } from "react-router-dom";
@@ -33,14 +34,14 @@ const Footer = () => {
                   <FaLinkedinIn size={16} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61579217911251"
                   className="bg-green-900 hover:bg-green-800 p-2.5 rounded-full text-white transition-colors duration-300"
                   aria-label="GitHub"
                 >
-                  <FaGithub size={16} />
+                  <FaFacebook size={16} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/azaleamanagementservices"
                   className="bg-green-900 hover:bg-green-800 p-2.5 rounded-full text-white transition-colors duration-300"
                   aria-label="Instagram"
                 >
@@ -89,7 +90,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Quick Links */}
-            <div>
+            <div className="flex flex-col items-center">
               <h3 className="text-lg font-semibold mb-4 text-gray-900">
                 Quick Links
               </h3>
