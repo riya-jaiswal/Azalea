@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Navbar from '../Section/Navbar'
 import Footer from '../Section/Footer'
 import Aboutsection from '../Section/About'
@@ -118,6 +118,7 @@ function About() {
             >
               <img
                 src={member.image}
+                loading='lazy'
                 alt={member.name}
                 className="w-24 h-24 mx-auto rounded-full mb-4"
               />
@@ -136,4 +137,4 @@ function About() {
   )
 }
 
-export default About
+export default memo(About)

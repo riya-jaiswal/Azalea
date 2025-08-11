@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import Image from "../assets/OurCertificate/Image1.jpg"
 const CertificatesSection = () => {
   const [hoveredCert, setHoveredCert] = useState(null);
@@ -68,7 +68,7 @@ const CertificatesSection = () => {
         </p>
         <div className="grid grid-cols-1 justify-center  items-center lg:grid-cols-5 lg:justify-end lg:items-end gap-6">
           {[1, 2, 3, 4, 5].map((_, idx) => (
-            <img key={idx} src={Image} className={` rounded-2xl w-48 ${idx === 2 ? 'h-72' : 'h-60'}`}/>
+            <img key={idx} loading="lazy" src={Image} className={` rounded-2xl w-48 ${idx === 2 ? 'h-72' : 'h-60'}`}/>
           ))}
         </div>
       </section> */}
@@ -76,4 +76,4 @@ const CertificatesSection = () => {
   );
 };
 
-export default CertificatesSection;
+export default memo(CertificatesSection);

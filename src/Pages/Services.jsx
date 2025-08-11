@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Navbar from '../Section/Navbar'
 import Footer from '../Section/Footer'
 import Servicesection from '../Section/Servicesection'
@@ -19,4 +19,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default memo(Services)

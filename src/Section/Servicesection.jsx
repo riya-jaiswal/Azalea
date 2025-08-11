@@ -4,6 +4,7 @@ import service3 from '../assets/Hero section/image 1.jpeg';
 import service4 from '../assets/Service/Image 1.jpeg';
 import service5 from '../assets/Service/image 2.jpeg';
 import service6 from '../assets/Service/image 3.jpeg';
+import { memo } from 'react';
 
 
 
@@ -57,7 +58,7 @@ const Servicesection = () => {
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-white p-4 rounded-2xl shadow-md">
-              <img src={item.img} alt={item.title} className="rounded-xl mb-4 h-48 w-full object-cover" />
+              <img src={item.img} loading='lazy' alt={item.title} className="rounded-xl mb-4 h-48 w-full object-cover" />
               <h3 className="font-bold text-xl text-green-900 mb-2">{item.title}</h3>
               <p className="text-sm text-gray-700">{item.desc}</p>
             </div>
@@ -70,4 +71,4 @@ const Servicesection = () => {
   );
 };
 
-export default Servicesection;
+export default memo(Servicesection);

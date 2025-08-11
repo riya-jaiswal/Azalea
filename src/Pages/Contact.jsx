@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Navbar from '../Section/Navbar'
 import Footer from '../Section/Footer'
 import Contactsection from '../Section/Contactsection'
@@ -16,4 +16,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default memo(Contact)

@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import Swal from "sweetalert2";
 import ContactImage from "../assets/Hero/BackGroundImage5.jpeg";
+import { memo } from "react";
 
 const Contactsection = (props) => {
   const {
@@ -211,6 +212,7 @@ const Contactsection = (props) => {
         <div className="rounded-xl order-1 md:order-2">
           <img
             src={ContactImage}
+            loading="lazy"
             alt="Contact Illustration"
             className="h-90 w-full rounded-lg object-cover hover:scale-105 transition-all duration-300"
           />
@@ -238,4 +240,4 @@ const Contactsection = (props) => {
   );
 };
 
-export default Contactsection;
+export default memo(Contactsection);

@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 // Spinner.jsx
 const Spinner = () => (
   <div className="w-screen h-screen flex items-center justify-center bg-white">
@@ -5,4 +7,4 @@ const Spinner = () => (
   </div>
 );
 
-export default Spinner;
+export default memo(Spinner);
