@@ -16,7 +16,7 @@ const AboutSection = () => {
               About Us
             </h2>
             <div className="w-20 h-1 bg-[#187530] mx-auto mb-6"></div>
-            <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto">
               Azalea Management Services LLP offers complete real estate and
               community living solutions—from post-sales property management to
               NRI care and cooperative society administration.
@@ -165,7 +165,7 @@ const AboutSection = () => {
                   loading="lazy"
                     src={AboutImage}
                     alt="About Azalea Management Services - Professional Property Management"
-                    className="w-full h-80 lg:h-[800px] object-cover transition duration-500 hover:scale-105"
+                    className="w-full h-80 lg:h-[810px] object-cover transition duration-500 hover:scale-105"
                   />
                 </div>
                 

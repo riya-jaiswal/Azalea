@@ -100,7 +100,7 @@ const Contactsection = (props) => {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530]">
           Contact Us
         </h2>
-        <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+        <p className="text-gray-600 mt-2 text-base max-w-2xl mx-auto">
           Reach out to us for inquiries, partnerships, or service requests. Our
           team is ready to assist you with personalized support and guidance.
         </p>
