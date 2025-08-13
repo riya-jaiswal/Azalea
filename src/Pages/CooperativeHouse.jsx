@@ -137,7 +137,7 @@ const CooperativeHousingSocietyManagementPage = () => {
               Why Choose Our Society Management?
             </h2>
             <p className="text-gray-600 mt-2 text-base max-w-2xl mx-auto">
-              Enjoy affordability, security, and community harmony through effective cooperative management[7][10].
+              Enjoy affordability, security, and community harmony through effective cooperative management.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

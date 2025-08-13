@@ -33,7 +33,7 @@ const PostSalesServicesPage = () => {
             Our specialized post-sales services help real estate developers
             manage customer lifecycles efficiently, from onboarding to
             possession, ensuring transparency, loyalty, and revenue
-            optimization[4].
+            optimization.
           </p>
         </div>
       </section>
@@ -52,13 +52,13 @@ const PostSalesServicesPage = () => {
                 icon: "👥",
                 title: "Customer Onboarding",
                 description:
-                  "Smooth integration of new clients with personalized guidance and setup[4][5]",
+                  "Smooth integration of new clients with personalized guidance and setup",
               },
               {
                 icon: "💰",
                 title: "Collections & Revenue Management",
                 description:
-                  "Efficient payment tracking and revenue optimization strategies[4]",
+                  "Efficient payment tracking and revenue optimization strategies",
               },
               {
                 icon: "📞",
@@ -197,7 +197,7 @@ const PostSalesServicesPage = () => {
           </h2>
           <p className="text-gray-600 mt-2 text-base max-w-2xl mx-auto mb-12">
             Leverage cutting-edge technology to streamline post-sales processes
-            for developers worldwide[1].
+            for developers worldwide.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
