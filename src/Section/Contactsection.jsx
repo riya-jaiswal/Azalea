@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import Swal from "sweetalert2";
-import ContactImage from "../assets/Hero/BackGroundImage5.jpeg";
+import ContactImage from "../assets/Contact/Image1.jpg";
 import { memo } from "react";
 
 const Contactsection = (props) => {
@@ -225,7 +225,7 @@ const Contactsection = (props) => {
           <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#187530] mb-6 text-center">Our Location</h3>
           <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1223222678086!2d72.96354517371955!3d19.18985894839109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b97c3d41fdcd%3A0x5be452039c10bcd9!2sAzalea%20Management%20Services%20LLP!5e0!3m2!1sen!2sin!4v1754566078085!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3767.6808073840143!2d72.9839167!3d19.209138900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDEyJzMyLjkiTiA3MsKwNTknMDIuMSJF!5e0!3m2!1sen!2sin!4v1755005198612!5m2!1sen!2sin"
               width="100%"
               height="100%"
               allowFullScreen=""

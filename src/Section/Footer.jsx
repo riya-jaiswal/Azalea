@@ -20,7 +20,13 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {/* Company Info */}
             <div>
-              <img src={logo} alt="Azalea Logo" className="h-28 mb-4" loading="lazy" />
+              <img
+                src={logo}
+                alt="Azalea Logo"
+                className="h-28 mb-4"
+                loading="lazy"
+              />
+              <h2 className="text-base font-semibold">	Your Property, Our Priority—with Care and Clarity.</h2>
               <p className="text-gray-700 text-sm leading-relaxed mb-6">
                 Azalea Management Services LLP is a Start Up India certified
                 company recognized by DPIIT
@@ -61,18 +67,36 @@ const Footer = () => {
                     className="text-green-900 mt-1 flex-shrink-0"
                     size={14}
                   />
-                  <a href="https://maps.app.goo.gl/Nzqbd45jDDkHQfJ86" className="text-sm hover:underline hover:text-green-900 cursor-pointer text-gray-700 leading-relaxed">
+                  <a
+                    href="https://maps.app.goo.gl/Nzqbd45jDDkHQfJ86"
+                    className="text-sm hover:underline hover:text-green-900 cursor-pointer text-gray-700 leading-relaxed"
+                  >
                     12/28-B, Rajdeep Vrindavan CHSL, Vrindavan Society Phase I,
                     Thane, Maharashtra 400601, India
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <FaPhone className="text-green-900 flex-shrink-0 rotate-100" size={14} />
+                  <FaPhone
+                    className="text-green-900 flex-shrink-0 rotate-100"
+                    size={14}
+                  />
                   <a
                     href="tel:+917738975751"
                     className="text-sm text-gray-700 hover:underline hover:text-green-900 transition-colors duration-200"
                   >
                     +91 77389 757 51
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <FaEnvelope
+                    className="text-green-900 flex-shrink-0"
+                    size={14}
+                  />
+                  <a
+                    href="mailto:contact@azaleaservices.co.in"
+                    className="text-sm hover:underline text-gray-700 hover:text-green-900 transition-colors duration-200"
+                  >
+                    contact@azaleaservices.co.in
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

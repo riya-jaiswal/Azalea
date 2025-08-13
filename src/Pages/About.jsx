@@ -5,10 +5,10 @@ import Aboutsection from "../Section/About";
 import Hero from "../Section/Hero";
 import Image1 from "../assets/Team/Member1.jpeg";
 import Image2 from "../assets/Team/Member2.jpeg";
+import Mainlayout from "../Section/Mainlayout";
 function About() {
   return (
-    <div>
-      <Navbar />
+    <Mainlayout>
       <Hero
         isHomepage={false}
         heading="Where Harmony Meets Housing"
@@ -107,18 +107,22 @@ function About() {
           {[
             {
               name: "Sanket Shailendra Kalke",
-              role: "Director",
+              role: "Founder, Managing Partner",
               image: Image1,
+              description:
+                "Guiding Azalea with a shared belief in innovation, integrity, and community-focused leadership.",
             },
             {
-              name: " Savita Shailendra Kalke",
+              name: "Savita Shailendra Kalke",
               role: "Director",
               image: Image2,
+              description:
+                "Advancing Azalea’s mission through innovation, integrity, and community-focused leadership.",
             },
           ].map((member, i) => (
             <div
               key={i}
-              className="bg-[#f9f9f9] p-6 rounded-xl shadow hover:shadow-lg transition"
+              className="bg-[#f9f9f9] p-6 rounded-xl shadow hover:shadow-lg transition space-y-2"
             >
               <img
                 src={member.image}
@@ -126,17 +130,18 @@ function About() {
                 alt={member.name}
                 className="w-24 h-24 mx-auto rounded-full mb-4"
               />
-              <h4 className="text-lg font-semibold text-[#187530]">
+              <h4 className="text-lg font-bold text-[#187530]">
                 {member.name}
               </h4>
-              <p className="text-sm text-gray-600">{member.role}</p>
+              <p className="text-base font-bold text-gray-600">{member.role}</p>
+              <p className="text-sm font-normal text-gray-400">
+                {member.description}
+              </p>
             </div>
           ))}
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Mainlayout>
   );
 }
 

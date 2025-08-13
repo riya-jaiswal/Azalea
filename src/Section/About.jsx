@@ -16,10 +16,13 @@ const AboutSection = () => {
               About Us
             </h2>
             <div className="w-20 h-1 bg-[#187530] mx-auto mb-6"></div>
-            <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto mb-4">
               Azalea Management Services LLP offers complete real estate and
               community living solutions—from post-sales property management to
               NRI care and cooperative society administration.
+            </p>
+            <p className="text-base text-gray-600 leading-relaxed max-w-2xl mx-auto font-medium">
+              Guided by our core values of <span className="text-[#187530] font-semibold">clarity</span>, <span className="text-[#187530] font-semibold">care</span>, and <span className="text-[#187530] font-semibold">accountability</span>, we ensure every client receives transparent, compassionate, and reliable service.
             </p>
           </div>
 

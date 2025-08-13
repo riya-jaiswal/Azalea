@@ -5,45 +5,56 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What services does Azalea Management Services provide?",
+      question: "What is Azalea Management Services LLP?",
       answer:
-        "We offer comprehensive property and community management services including post-sales support, cooperative management, NRI property care, maintenance coordination, tenant relations, financial management, and community harmony initiatives.",
+        "Azalea is a Start Up India certified firm delivering end to end property management solutions for NRIs, developers, and cooperative housing societies. From inventory and valuation to site coordination, compliance, post-handover support, and CHS governance—we manage every aspect with structure, accountability, and trust.",
     },
     {
-      question: "How do you handle NRI property management?",
+      question: "Who can benefit from Azalea's services?",
       answer:
-        "We provide dedicated NRI services including regular property inspections, tenant management, rent collection, maintenance oversight, legal compliance, and detailed monthly reports to keep you informed about your property investment from anywhere in the world.",
+        "• NRIs seeking complete property assistance—including documentation, digitization, valuation, coordination, and dispute-prepared reporting\n• Developers looking for seamless post sales service execution\n• CHS committees aiming for compliant governance, vendor control, and record transparency",
     },
     {
-      question: "What is your fee structure for property management?",
+      question: "What makes Azalea different from other service providers?",
       answer:
-        "Our fees are competitive and transparent, typically ranging from 8-12% of monthly rental income depending on the services required. We also offer customized packages for cooperative management and one-time consultation services. Contact us for a detailed quote based on your specific needs.",
+        "Our services are powered by structured workflows, ethical standards, and emotionally intelligent client interaction. Every task is backed by clear SOPs, punctual execution, and a culture rooted in precision and trust.",
     },
     {
-      question: "How quickly do you respond to maintenance requests?",
+      question: "How do I request a consultation?",
       answer:
-        "Emergency maintenance issues are addressed within 24 hours, while routine maintenance requests are handled within 3-5 business days. We maintain a network of trusted vendors and contractors to ensure prompt, quality service delivery.",
+        "You can reach us via the “Request Consultation” button across the website or email contact@azaleaservices.co.in. We’ll coordinate a discovery call tailored to your requirements.",
     },
     {
-      question: "Do you provide regular reports on property performance?",
+      question: "Can Azalea manage properties outside Thane or Maharashtra?",
       answer:
-        "Yes, we provide comprehensive monthly reports including financial statements, maintenance updates, tenant communications, market analysis, and recommendations for property improvements. NRI clients receive additional documentation for tax and investment purposes.",
+        "Yes. While we're headquartered in Thane, Azalea’s service model is scalable and location-adaptive. We are currently operational in Thane, Mumbai, Navi Mumbai, Palghar, Pune, and Nashik, with a pan India expansion underway to extend support wherever NRIs need us.",
     },
     {
-      question: "Can you help with legal compliance and documentation?",
+      question: "What documents are needed for property inventory management?",
       answer:
-        "Absolutely. We ensure all properties comply with local regulations, handle necessary documentation, coordinate with legal professionals when needed, and keep all records updated. This includes rent agreements, society compliance, tax documentation, and regulatory filings.",
+        "Usually requested:\n• Ownership/title documents\n• Floor plans or layout sketches\n• Handover and access records\n• Previous valuation references (if applicable)\nWe share an onboarding checklist to make it simple and structured.",
+    },
+    {
+      question: "How are fees structured?",
+      answer:
+        "Our pricing depends on property type, service complexity, and urgency. Post-consultation, you’ll receive a detailed quotation—transparent, tailored, and free of hidden charges.",
     },
     {
       question:
-        "What makes Azalea Management Services different from other property managers?",
+        "Are services available for individual homeowners or only developers and CHS?",
       answer:
-        "Our commitment to transparency, personalized service, and community-focused approach sets us apart. We combine technology with human touch, provide detailed reporting, maintain 24/7 communication channels, and treat every property as if it were our own.",
+        "Absolutely. We support individual NRI homeowners managing personal assets, with solutions that are just as robust and process-oriented as our institutional offerings.",
     },
     {
-      question: "How do I get started with your services?",
+      question: "Is my data secure with Azalea?",
       answer:
-        "Simply contact us for a free consultation. We'll assess your property, understand your requirements, provide a customized service plan, and can begin management services within a week of agreement signing.",
+        "We apply structured digital protocols and controlled access systems to manage client information responsibly. Ensuring data confidentiality and integrity is central to our operational ethos.",
+    },
+    {
+      question:
+        "Does Azalea assist with dispute resolution or legal coordination?",
+      answer:
+        "While we don’t offer legal representation, our documentation and structured processes often play a crucial role in supporting dispute clarity. We also collaborate with legal advisors when needed to assist with case preparation.",
     },
     {
       question: "What is the typical turnaround time for service delivery?",
@@ -67,7 +78,7 @@ const FAQSection = () => {
           >
             contact@azaleaservices.co.in
           </a>{" "}
-          or tap the Request Consultation button for responsive, personalized
+          or tap the “Request Consultation” button for responsive, personalized
           support.
         </>
       ),

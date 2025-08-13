@@ -2,8 +2,10 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { memo, useState } from "react";
 import logo from "../assets/logo/Azalea Logo (4).png";
+import { useDispatch } from "react-redux";
 
 const Navbar = () => {
+  const disp = useDispatch();
   const location = useLocation();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +26,9 @@ const Navbar = () => {
   };
   const nav = useNavigate();
   const NavigatedToService = () => [nav("/contact")];
-
+  const toggleOpen = () => {
+    disp({ type: "open" });
+  };
   return (
     <nav className="bg-white shadow-md lg:rounded-b-[60px] z-50 fixed w-full top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,7 +65,7 @@ const Navbar = () => {
           {/* Right Button */}
           <div>
             <button
-              onClick={NavigatedToService}
+              onClick={toggleOpen}
               className="bg-green-900 text-white  p-2.5 px-8 text-base cursor-pointer  hover:bg-[#c89d47]  transition-all duration-300 font-semibold rounded-full"
             >
               Request Consultation

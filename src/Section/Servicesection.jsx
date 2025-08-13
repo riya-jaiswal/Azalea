@@ -1,12 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import service1 from "../assets/Service/Image 1.jpeg";
 import service2 from "../assets/Service/image 2.jpeg";
-import service3 from "../assets/Hero section/image 1.jpeg";
-import service4 from "../assets/Service/Image 1.jpeg";
-import service5 from "../assets/Service/image 2.jpeg";
-import service6 from "../assets/Service/image 3.jpeg";
+import service3 from "../assets/Service/image 3.jpeg";
+
 import { memo } from "react";
 
-const Servicesection = () => {
+const Servicesection = (props) => {
+  const nav = useNavigate();
   return (
     <section>
       {/* hero */}
@@ -32,45 +32,59 @@ const Servicesection = () => {
               img: service1,
               title: "NRI Property Inventory Management ",
               desc: "End-to-end inventory documentation, valuation, and digitization for NRIs. Transparent reporting, chain-of-custody clarity, and dispute-ready evidence.",
+              path: "/services/nri-property-inventory-management",
             },
             {
               img: service2,
               title: "Post Sales Services Support for Developers ",
               desc: "Seamless handovers, snag lists, documentation, and customer communication. Reduce post-handover friction and enhance brand trust.",
+              path: "/services/post-sales-services",
             },
             {
               img: service3,
               title: "Cooperative Housing Society Management ",
               desc: "AGM support, compliance, vendor management, and transparent record-keeping. Structure, accountability, and peace of mind for CHS committees.",
-            },
-        
-            {
-              img: service4,
-              title: "Cooperative Housing Solutions",
-              desc: "Society registration, finance management, facility maintenance, dispute resolution, and governance.",
-            },
-            {
-              img: service5,
-              title: "Second Home & Retreat Management",
-              desc: "Turnkey bungalow project management including interiors, landscaping, maintenance, and concierge.",
-            },
-            {
-              img: service6,
-              title: "Legal & Regulatory Support",
-              desc: "Support with occupancy certificates, property tax filings, and representation in legal matters.",
+              path: "/services/cooperative-housing-society-management",
             },
           ].map((item, idx) => (
-            <div key={idx} className="bg-white p-4 rounded-2xl shadow-md">
+            <div
+              key={idx}
+              className="bg-white p-4 rounded-2xl shadow-md hover:scale-105 duration-500 transition-all cursor-pointer"
+            >
               <img
                 src={item.img}
                 loading="lazy"
                 alt={item.title}
-                className="rounded-xl mb-4 h-48 w-full object-cover"
+                className="rounded-xl mb-4 h-48 w-full object-cover "
               />
               <h3 className="font-bold text-xl text-green-900 mb-2">
                 {item.title}
               </h3>
               <p className="text-sm text-gray-700">{item.desc}</p>
+              {props?.isServiceDisplay && (
+                <div className="mt-5">
+                  <button
+                    className="bg-green-900 text-white p-2.5 px-8 text-base cursor-pointer duration-300 transition-all hover:bg-[#c89d47] font-semibold rounded-full"
+                    onClick={() => {
+                      nav("/services");
+                    }}
+                  >
+                    Explore More
+                  </button>
+                </div>
+              )}
+              {props?.isServiceNavigation && (
+                <div className="mt-5">
+                  <button
+                    className="bg-green-900 text-white p-2.5 px-8 text-base cursor-pointer duration-300 transition-all hover:bg-[#c89d47] font-semibold rounded-full"
+                    onClick={() => {
+                      nav(item.path);
+                    }}
+                  >
+                    Read More
+                  </button>
+                </div>
+              )}
             </div>
           ))}
         </div>
