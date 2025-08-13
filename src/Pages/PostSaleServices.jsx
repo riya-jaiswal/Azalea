@@ -64,25 +64,25 @@ const PostSalesServicesPage = () => {
                 icon: "📞",
                 title: "Grievance & Escalation Handling",
                 description:
-                  "Prompt resolution of customer issues to maintain satisfaction[4][7]",
+                  "Prompt resolution of customer issues to maintain satisfaction",
               },
               {
                 icon: "🏦",
                 title: "Home Loan Assistance",
                 description:
-                  "Expert support for financing and loan processing[4]",
+                  "Expert support for financing and loan processing",
               },
               {
                 icon: "🏡",
                 title: "Possession Strategy & Delivery",
                 description:
-                  "Seamless handover and residence delivery execution[4]",
+                  "Seamless handover and residence delivery execution",
               },
               {
                 icon: "🤝",
                 title: "Loyalty Management",
                 description:
-                  "Programs to foster long-term client relationships and repeat business[4][5]",
+                  "Programs to foster long-term client relationships and repeat business",
               },
             ].map((feature, index) => (
               <div
@@ -161,7 +161,7 @@ const PostSalesServicesPage = () => {
             </h2>
             <p className="text-gray-600 mt-2 text-base max-w-2xl mx-auto">
               Deliver exceptional customer experiences that build loyalty and
-              drive repeat business for your development projects[1][5].
+              drive repeat business for your development projects.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -234,7 +234,7 @@ const PostSalesServicesPage = () => {
           </p>
           <a
            onClick={toggleOpen}
-            className="bg-white cursor-pointer text-green-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300"
+            className="bg-white cursor-pointer hover:bg-[#c89d47]  text-green-900 px-8 py-4 rounded-full font-bold text-lg hover:text-white transition-all duration-300"
           >
             Book Your Consultation Now
           </a>

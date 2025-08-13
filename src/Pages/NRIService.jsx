@@ -249,7 +249,7 @@ const NRIPropertyInventoryPage = () => {
           </p>
           <a
             onClick={toggleOpen}
-            className="bg-white cursor-pointer text-green-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300"
+            className="bg-white cursor-pointer hover:bg-[#c89d47] text-green-900 px-8 py-4 rounded-full font-bold text-lg  hover:text-white transition-all duration-300"
           >
             Book Your Consultation Now
           </a>

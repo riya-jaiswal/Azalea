@@ -30,7 +30,7 @@ const CooperativeHousingSocietyManagementPage = () => {
             Complete Society Management Solutions
           </h2>
           <p className="text-gray-600 mt-2 text-base max-w-2xl mx-auto italic">
-            Our specialized services support cooperative housing societies with comprehensive management of finances, infrastructure, security, and community activities for transparent and efficient operations[1][6].
+            Our specialized services support cooperative housing societies with comprehensive management of finances, infrastructure, security, and community activities for transparent and efficient operations.
           </p>
         </div>
       </section>
@@ -169,7 +169,7 @@ const CooperativeHousingSocietyManagementPage = () => {
             Advanced Digital Tools for Society Management
           </h2>
           <p className="text-gray-600 mt-2 text-base max-w-2xl mx-auto mb-12">
-            Utilize modern software for seamless society operations and resident engagement[2][4][5].
+            Utilize modern software for seamless society operations and resident engagement.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -199,7 +199,7 @@ const CooperativeHousingSocietyManagementPage = () => {
           </p>
           <a 
         onClick={toggleOpen}
-            className="bg-white cursor-pointer text-green-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300"
+            className="bg-white cursor-pointer hover:bg-[#c89d47]  text-green-900 px-8 py-4 rounded-full font-bold text-lg hover:text-white transition-all duration-300"
           >
             Book Your Consultation Now
           </a>
