@@ -31,7 +31,7 @@ const Mainlayout = (props) => {
 
   const onSubmit = async (data) => {
     try {
-   
+ 
 
       // Axios API call
       const response = await axios.post(
@@ -52,9 +52,9 @@ const Mainlayout = (props) => {
 
       const result = response.data;
 
-      if (response?.status=201) {
+      if (response?.status==201) {
         // Success alert
-        await Swal.fire({
+         Swal.fire({
           icon: "success",
           title: "Thank You!",
           text: "Your message has been sent successfully. We will get back to you soon!",
@@ -69,7 +69,7 @@ const Mainlayout = (props) => {
         closeDialog();
       } else {
         // Error alert
-        await Swal.fire({
+         Swal.fire({
           icon: "error",
           title: "Oops!",
           text:
