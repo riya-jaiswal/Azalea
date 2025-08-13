@@ -31,15 +31,7 @@ const Mainlayout = (props) => {
 
   const onSubmit = async (data) => {
     try {
-      // Show loading alert
-      Swal.fire({
-        title: "Sending...",
-        text: "Please wait while we process your request",
-        allowOutsideClick: false,
-        didOpen: () => {
-          Swal.showLoading();
-        },
-      });
+   
 
       // Axios API call
       const response = await axios.post(
@@ -60,7 +52,7 @@ const Mainlayout = (props) => {
 
       const result = response.data;
 
-      if (result.isSuccess) {
+      if (response?.status=201) {
         // Success alert
         await Swal.fire({
           icon: "success",
